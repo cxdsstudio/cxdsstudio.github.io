@@ -88,3 +88,4 @@ footer{border-top:1px solid var(--line);padding:34px 0 44px;color:var(--muted);f
  .news-item{grid-template-columns:1fr;gap:4px}
  .product{grid-template-columns:1fr}.product-actions{justify-content:flex-start}
 }
+\n\n/* VHS:main > .hero */\nmain > .hero {\n  padding: 72px 0 38px;\n}\n/* /VHS:main > .hero */\n
