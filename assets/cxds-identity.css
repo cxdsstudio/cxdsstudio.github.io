@@ -1,0 +1,117 @@
+/* Visual identity inspired by the original Cxds Studio icon. */
+body.cyberpunk.cxds-identity{
+ --bg:#050607;--surface:#0d1013;--surface2:#15171d;--text:#f5f5eb;--muted:#b3b5ba;
+ --lime:#dcff00;--pink:#ff176b;--cyan:#ffa1c2;--accent:#dcff00;--accent2:#ffa1c2;--line:#303238;
+ background-color:var(--bg);
+ background-image:radial-gradient(ellipse at 97% 13%,#ff176b0b,transparent 32%),linear-gradient(#c5c7ba04 1px,transparent 1px),linear-gradient(90deg,#c5c7ba04 1px,transparent 1px);
+ background-size:auto,64px 64px,64px 64px;
+}
+body.cyberpunk.cxds-identity header{background:#050607f2;border-bottom-color:#393031}
+body.cyberpunk.cxds-identity .nav{height:92px}
+body.cyberpunk.cxds-identity .brand{gap:9px}
+body.cyberpunk.cxds-identity .brand-icon{display:block;width:66px;height:66px;object-fit:contain;flex:none;mix-blend-mode:screen}
+body.cyberpunk.cxds-identity .brand-name{font-size:17px;font-style:italic;letter-spacing:-.03em}
+body.cyberpunk.cxds-identity .brand-name>span{color:var(--pink);font-style:normal;letter-spacing:.23em}
+body.cyberpunk.cxds-identity .navlinks a{font-size:12px}
+body.cyberpunk.cxds-identity .navlinks a[aria-current=page]::after{background:linear-gradient(90deg,var(--pink) 0 15%,var(--lime) 15% 100%)}
+body.cyberpunk.cxds-identity .navlinks a:last-child{border-color:#ff176b70;color:#f3f1ee}
+body.cyberpunk.cxds-identity .navlinks a:last-child:hover{color:var(--pink);border-color:var(--pink)}
+body.cyberpunk.cxds-identity .cyber-hero{padding-top:52px;isolation:isolate}
+body.cyberpunk.cxds-identity .cyber-hero::before{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;background:linear-gradient(134deg,transparent 0 69%,#ff176b08 69% 69.12%,transparent 69.12%),linear-gradient(134deg,transparent 0 78%,#dcff0008 78% 78.1%,transparent 78.1%)}
+body.cyberpunk.cxds-identity .cyber-hero-grid{grid-template-columns:1.02fr 1fr;gap:28px}
+body.cyberpunk.cxds-identity .cyber-hero .eyebrow{color:#ff8ab4;letter-spacing:.1em}
+body.cyberpunk.cxds-identity .signal-dot{background:var(--pink);box-shadow:0 0 12px #ff176b88}
+body.cyberpunk.cxds-identity .cyber-hero h1{font-style:italic;font-size:clamp(76px,8.1vw,124px);line-height:.92;letter-spacing:-.065em;margin:28px 0 31px}
+body.cyberpunk.cxds-identity .cyber-hero h1>span:first-child{color:var(--lime)}
+body.cyberpunk.cxds-identity .brand-x{color:var(--pink);text-shadow:3px 0 0 #ff176b22}
+body.cyberpunk.cxds-identity .neon-title{color:var(--text);text-shadow:3px 2px 0 #ff176b28}
+body.cyberpunk.cxds-identity .title-cursor{color:var(--pink);font-weight:700}
+body.cyberpunk.cxds-identity .cyber-hero p{color:#bcbfc2;font-size:16px}
+body.cyberpunk.cxds-identity .cyber-visual{border:0;background:none;align-self:center;overflow:visible}
+body.cyberpunk.cxds-identity .cyber-visual::after{display:none}
+body.cyberpunk.cxds-identity .visual-heading{color:#a8a4a8;margin:6px 6px 0;font-size:9px}
+body.cyberpunk.cxds-identity .visual-heading i{background:var(--pink)}
+body.cyberpunk.cxds-identity .visual-heading>span:last-child{color:var(--pink)}
+body.cyberpunk.cxds-identity .cyber-visual>img{width:calc(100% + 44px);max-width:none;height:auto;max-height:none;aspect-ratio:1;object-fit:contain;margin:-3px -22px -10px;mix-blend-mode:screen}
+body.cyberpunk.cxds-identity .visual-caption{padding:0 10px 4px;color:#bdb9bc;font-size:10px;gap:23px}
+body.cyberpunk.cxds-identity .visual-caption b{color:var(--pink)}
+body.cyberpunk.cxds-identity .visual-corner{display:none}
+body.cyberpunk.cxds-identity .hero-bottom{position:relative;margin-top:35px;border-bottom-color:#413438;padding-bottom:26px;color:#a8a5aa}
+body.cyberpunk.cxds-identity .hero-bottom::after{content:"";position:absolute;height:4px;width:170px;left:0;bottom:-2px;background:repeating-linear-gradient(-55deg,var(--lime) 0 6px,transparent 6px 12px)}
+body.cyberpunk.cxds-identity .hero-bottom a span{color:var(--pink)}
+body.cyberpunk.cxds-identity .btn{background:#101217;border-color:#434149;color:#f4f2ee}
+body.cyberpunk.cxds-identity .btn:hover{border-color:var(--pink);background:#201019;color:#ff9cc0}
+body.cyberpunk.cxds-identity .cyber-primary{color:#090b05;background:var(--lime);border-color:var(--lime)}
+body.cyberpunk.cxds-identity .cyber-primary:hover{color:white;background:var(--pink);border-color:var(--pink)}
+body.cyberpunk.cxds-identity .cyber-wide{border-left:3px solid var(--pink)}
+body.cyberpunk.cxds-identity .news-section h2::before{color:var(--pink)}
+body.cyberpunk.cxds-identity .news-section .section-head .btn{background:none;border:0;color:var(--lime)}
+body.cyberpunk.cxds-identity .news-section .section-head .btn:hover{color:var(--pink)}
+body.cyberpunk.cxds-identity .news{border-top-color:#59424c}
+body.cyberpunk.cxds-identity .news-item{border-bottom-color:#303037}
+body.cyberpunk.cxds-identity .news-item:hover{background:#ff176b07}
+body.cyberpunk.cxds-identity .news a{color:#ecefe6;text-decoration-color:#dcff0090}
+body.cyberpunk.cxds-identity .news a span[style*="color"]{color:inherit!important}
+body.cyberpunk.cxds-identity .news a:hover{color:#ff9abd;text-decoration-color:var(--pink)}
+body.cyberpunk.cxds-identity .cyber-contact>.wrap{background:linear-gradient(112deg,#151613,#100e13);border-color:#59404a}
+body.cyberpunk.cxds-identity .cyber-contact>.wrap::after{content:"";position:absolute;right:-1px;top:-1px;width:29px;height:4px;background:var(--pink)}
+body.cyberpunk.cxds-identity .cyber-contact h2::before{color:var(--pink)}
+body.cyberpunk.cxds-identity .cyber-contact .btn{color:#090b05;background:var(--lime);border-color:var(--lime)}
+body.cyberpunk.cxds-identity .cyber-contact .btn:hover{color:white;background:var(--pink);border-color:var(--pink)}
+body.cyberpunk.cxds-identity .page-head>.wrap{border-bottom-color:#44353e}
+body.cyberpunk.cxds-identity .page-head .eyebrow{color:#ff90b6}
+body.cyberpunk.cxds-identity .page-head .eyebrow::before{color:var(--pink)}
+body.cyberpunk.cxds-identity .product{background:linear-gradient(115deg,#111416,#0c0e12);border-color:#36323b;border-left-color:#ff176b99}
+body.cyberpunk.cxds-identity .product:hover{background:linear-gradient(115deg,#161914,#161016);border-color:#a6ba39;border-left-color:var(--pink)}
+body.cyberpunk.cxds-identity .product-icon-slot{background:#151519;box-shadow:0 0 0 1px #423e42}
+body.cyberpunk.cxds-identity .product-actions .btn{background:#131318;border-color:#45404a}
+body.cyberpunk.cxds-identity .product-actions .btn:first-child{color:var(--lime);border-color:#647327;background:#dcff0007}
+body.cyberpunk.cxds-identity .product-actions .btn:hover{color:#ff9abd;border-color:var(--pink)}
+body.cyberpunk.cxds-identity .article h2{border-left-color:var(--pink)}
+body.cyberpunk.cxds-identity .article a{color:#ff9fc0}
+body.cyberpunk.cxds-identity footer{background:#040506;border-top-color:#3d3039}
+body.cyberpunk.cxds-identity .cyber-footer-lead{border-bottom-color:#372c33;padding-bottom:21px;margin-bottom:23px}
+body.cyberpunk.cxds-identity .cyber-footer-lead>a{display:flex;align-items:center;gap:13px;font-style:italic}
+body.cyberpunk.cxds-identity .footer-brand-icon{width:64px;height:64px;object-fit:contain;mix-blend-mode:screen}
+body.cyberpunk.cxds-identity .cyber-footer-lead .footer-brand-text{font-size:20px;letter-spacing:-.04em;color:var(--lime);margin:0}
+body.cyberpunk.cxds-identity .footer-brand-text i{color:#f5f5eb;font-style:italic}
+body.cyberpunk.cxds-identity .cyber-footer-lead>span{color:#ad949e}
+body.cyberpunk.cxds-identity .footer-row a:hover{color:#ff8fb8}
+@media(min-width:1500px){body.cyberpunk.cxds-identity .cyber-hero{padding-top:72px}}
+@media(max-width:1100px){
+ body.cyberpunk.cxds-identity .nav{height:82px}
+ body.cyberpunk.cxds-identity .brand-icon{width:58px;height:58px}
+ body.cyberpunk.cxds-identity .navlinks{gap:19px}
+ body.cyberpunk.cxds-identity .navlinks a{font-size:11px}
+ body.cyberpunk.cxds-identity .cyber-hero h1{font-size:clamp(63px,8vw,98px)}
+ body.cyberpunk.cxds-identity .cyber-hero p{font-size:14px}
+ body.cyberpunk.cxds-identity .visual-heading{font-size:8px}
+}
+@media(max-width:760px){
+ body.cyberpunk.cxds-identity .nav{height:76px}
+ body.cyberpunk.cxds-identity .brand-icon{width:52px;height:52px}
+ body.cyberpunk.cxds-identity .brand-name{font-size:15px}
+ body.cyberpunk.cxds-identity .brand-name>span{font-size:9px}
+ body.cyberpunk.cxds-identity .menu{min-height:43px;border-color:#63404e}
+ body.cyberpunk.cxds-identity .menu span{color:var(--pink)}
+ body.cyberpunk.cxds-identity .navlinks{top:76px;background:#09090dfc;border-bottom-color:#ff176b66;gap:0}
+ body.cyberpunk.cxds-identity .navlinks a{font-size:14px}
+ body.cyberpunk.cxds-identity .cyber-hero{padding-top:38px}
+ body.cyberpunk.cxds-identity .cyber-hero-grid{grid-template-columns:1fr;gap:32px}
+ body.cyberpunk.cxds-identity .cyber-hero h1{font-size:clamp(55px,16.5vw,114px);margin:23px 0 29px}
+ body.cyberpunk.cxds-identity .cyber-hero .eyebrow{font-size:9px}
+ body.cyberpunk.cxds-identity .cyber-hero p{font-size:14px}
+ body.cyberpunk.cxds-identity .cyber-visual{width:100%;max-width:520px}
+ body.cyberpunk.cxds-identity .cyber-visual>img{width:calc(100% + 20px);margin:0 -10px -8px}
+ body.cyberpunk.cxds-identity .visual-heading{margin:8px 0 0;font-size:7px}
+ body.cyberpunk.cxds-identity .visual-caption{gap:18px;font-size:9px}
+ body.cyberpunk.cxds-identity .hero-bottom{margin-top:26px}
+ body.cyberpunk.cxds-identity .hero-bottom::after{width:92px;height:3px}
+ body.cyberpunk.cxds-identity .cyber-footer-lead>a{gap:10px}
+ body.cyberpunk.cxds-identity .footer-brand-icon{width:56px;height:56px}
+ body.cyberpunk.cxds-identity .cyber-footer-lead .footer-brand-text{font-size:19px}
+}
+
+/* End any unfinished legacy selector. */
+{}
+body.cyberpunk.cxds-identity .page-head h1 .title-prefix { color: var(--pink); font-family: var(--mono); font-size: 0.6em; font-weight: 400; letter-spacing: -0.08em; display: inline-block; margin-right: 0.35em; vertical-align: 0.06em; }

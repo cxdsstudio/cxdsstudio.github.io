@@ -1,0 +1,190 @@
+/* Cxds Studio / Cyberpunk edition. Scoped to keep editor controls independent. */
+body.cyberpunk{
+ --bg:#080c10;--surface:#10171c;--surface2:#142027;--text:#f2f4ed;--muted:#a5b2ba;
+ --line:#293a42;--accent:#d5ff45;--accent2:#68e2f5;--max:1240px;--radius:3px;
+ --lime:#d5ff45;--cyan:#68e2f5;--pink:#ff6c93;--mono:Consolas,"Courier New",monospace;
+ color:var(--text);background-color:var(--bg);
+ background-image:radial-gradient(ellipse at 85% 14%,#5b89150c,transparent 36%),linear-gradient(#91c3ce04 1px,transparent 1px),linear-gradient(90deg,#91c3ce04 1px,transparent 1px);
+ background-size:auto,48px 48px,48px 48px;
+ font-family:"Segoe UI","Noto Sans JP",Meiryo,sans-serif;line-height:1.85;
+}
+body.cyberpunk *{box-sizing:border-box}
+body.cyberpunk ::selection{background:var(--lime);color:#080c10}
+body.cyberpunk a{color:inherit}
+body.cyberpunk a:focus-visible,body.cyberpunk button:focus-visible{outline:2px solid var(--cyan);outline-offset:5px}
+body.cyberpunk .wrap{width:min(var(--max),calc(100% - 96px))}
+body.cyberpunk header{background:#080c10ee;border-bottom:1px solid var(--line);backdrop-filter:blur(18px)}
+body.cyberpunk .nav{height:90px;gap:36px}
+body.cyberpunk .brand{display:inline-flex;align-items:center;gap:13px;font-size:16px;font-weight:800;line-height:1.05;letter-spacing:.02em;text-decoration:none;white-space:nowrap}
+body.cyberpunk .brand-symbol{display:grid;place-items:center;width:38px;height:38px;background:var(--lime);color:#080c10;font:900 29px/1 "Arial Black",sans-serif;clip-path:polygon(0 0,77% 0,100% 23%,100% 100%,23% 100%,0 77%)}
+body.cyberpunk .brand-name{display:grid;gap:3px}
+body.cyberpunk .brand-name>span{color:var(--muted);font:10px/1 var(--mono);letter-spacing:.3em}
+body.cyberpunk .navlinks{display:flex;gap:29px;align-items:center}
+body.cyberpunk .navlinks a{font:12px/1.5 var(--mono);color:#afbac0;position:relative;padding:13px 0;transition:color .18s}
+body.cyberpunk .navlinks a:hover,body.cyberpunk .navlinks a[aria-current=page]{color:var(--lime)}
+body.cyberpunk .navlinks a[aria-current=page]::after{content:"";position:absolute;height:3px;background:var(--lime);bottom:-19px;left:0;right:0}
+body.cyberpunk .navlinks a:last-child{border:1px solid #536736;padding:11px 17px;color:var(--lime)}
+body.cyberpunk .menu{display:none;font:12px var(--mono);border:1px solid var(--line);background:transparent;border-radius:0;padding:12px 15px}
+body.cyberpunk .menu span{display:inline-block;margin-left:12px;color:var(--lime);transition:transform .18s}
+body.cyberpunk .menu[aria-expanded=true] span{transform:rotate(45deg)}
+body.cyberpunk .cyber-hero{padding:72px 0 0;position:relative;overflow:hidden}
+body.cyberpunk .cyber-hero-grid{display:grid;grid-template-columns:1.02fr 1fr;align-items:center;gap:28px}
+body.cyberpunk .eyebrow{font:11px/1.7 var(--mono);letter-spacing:.13em;color:var(--cyan);display:flex;gap:10px;align-items:center}
+body.cyberpunk .signal-dot{width:6px;height:6px;background:var(--cyan);box-shadow:0 0 12px #68e2f570;flex:none}
+body.cyberpunk .cyber-hero h1{font-family:"Arial Black","Segoe UI",sans-serif;font-size:clamp(76px,8.4vw,128px);font-weight:900;line-height:.91;letter-spacing:-.075em;margin:26px 0 30px}
+body.cyberpunk .cyber-hero h1>span{display:block}
+body.cyberpunk .neon-title{color:var(--lime);font-style:italic;padding-right:8px;text-shadow:0 0 55px #d5ff4518}
+body.cyberpunk .title-cursor{font-weight:400;letter-spacing:-.2em}
+body.cyberpunk .cyber-hero p{font-size:16px;line-height:1.95;max-width:520px;color:var(--muted);margin:0}
+body.cyberpunk .actions{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:33px;max-width:440px}
+body.cyberpunk .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:24px;padding:12px 20px;border:1px solid #3b4c54;border-radius:0;background:#10191e;font-size:13px;font-weight:600;text-decoration:none;transition:background .2s,border-color .2s,color .2s,transform .2s}
+body.cyberpunk .btn>span{font-size:18px;font-weight:400;margin-left:auto;line-height:1}
+body.cyberpunk .btn:hover{background:#1b292d;border-color:var(--cyan);color:var(--cyan);transform:translateY(-2px)}
+body.cyberpunk .cyber-primary{color:#0c1206;background:var(--lime);border-color:var(--lime)}
+body.cyberpunk .cyber-primary:hover{background:#e3ff89;border-color:#e3ff89;color:#0c1206}
+body.cyberpunk .cyber-wide{grid-column:1/-1;justify-content:space-between}
+body.cyberpunk .cyber-visual{position:relative;border:1px solid #34432c;background:radial-gradient(ellipse at 50% 50%,#19271470,transparent 72%);align-self:stretch;display:flex;flex-direction:column;justify-content:center;min-width:0}
+body.cyberpunk .cyber-visual::after{content:"";position:absolute;pointer-events:none;inset:0;background:repeating-linear-gradient(0deg,transparent 0,transparent 3px,#07100a18 3px,#07100a18 4px)}
+body.cyberpunk .cyber-visual>img{display:block;width:100%;height:auto;aspect-ratio:640/540;object-fit:contain;max-height:450px}
+body.cyberpunk .visual-heading{display:flex;justify-content:space-between;gap:12px;margin:17px 19px 0;color:#839c8c;font:9px/1.4 var(--mono);letter-spacing:.1em;z-index:1}
+body.cyberpunk .visual-heading i{display:inline-block;background:var(--lime);width:5px;height:5px;margin-right:6px}
+body.cyberpunk .visual-heading>span:last-child{color:var(--lime)}
+body.cyberpunk .visual-caption{display:flex;align-items:center;justify-content:center;gap:27px;color:#b4c2b5;font:10px var(--mono);letter-spacing:.11em;padding:0 20px 20px;z-index:1}
+body.cyberpunk .visual-caption b{color:var(--lime);font-size:16px;font-weight:400}
+body.cyberpunk .visual-corner{position:absolute;width:13px;height:13px;border-color:var(--lime);border-style:solid;z-index:2}
+body.cyberpunk .corner-tl{left:-1px;top:-1px;border-width:2px 0 0 2px}
+body.cyberpunk .corner-br{right:-1px;bottom:-1px;border-width:0 2px 2px 0}
+body.cyberpunk .hero-bottom{display:flex;justify-content:space-between;gap:20px;border-bottom:1px solid var(--line);padding:30px 0 24px;margin-top:46px;color:#8b9d9e;font:10px/1.7 var(--mono);letter-spacing:.12em}
+body.cyberpunk .hero-bottom a{text-decoration:none;font-size:9px}
+body.cyberpunk .hero-bottom a:hover{color:var(--lime)}
+body.cyberpunk .hero-bottom a span{margin-left:17px;color:var(--lime)}
+body.cyberpunk section{padding:64px 0}
+body.cyberpunk .news-section{scroll-margin-top:112px;padding:70px 0 76px}
+body.cyberpunk .section-head{align-items:center;gap:24px;margin-bottom:32px}
+body.cyberpunk h2{font-size:clamp(30px,4vw,48px);line-height:1.2;letter-spacing:-.04em;font-weight:750}
+body.cyberpunk .sub{font-size:14px;line-height:1.8;color:var(--muted);margin:10px 0 0}
+body.cyberpunk.page-home .news-section h2::before{content:"01 / STUDIO LOG";display:block;color:var(--lime);font:10px/1.5 var(--mono);letter-spacing:.12em;margin-bottom:15px}
+body.cyberpunk .news-section .section-head .btn{border:0;background:none;color:var(--lime);font-size:12px;padding:8px 0;min-height:0;flex:none}
+body.cyberpunk .news{border-top:1px solid #415348}
+body.cyberpunk .news-item{grid-template-columns:145px 1fr;gap:24px;padding:24px 16px 24px 0;border-bottom:1px solid var(--line);font-size:14px;line-height:1.9;transition:background .18s}
+body.cyberpunk .news-item:hover{background:#d5ff4505}
+body.cyberpunk .news time{font:12px/2.25 var(--mono);color:var(--lime);letter-spacing:.04em}
+body.cyberpunk .news a{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;text-decoration-color:#75999d}
+body.cyberpunk .news a:hover{color:var(--cyan);text-decoration-color:var(--cyan)}
+body.cyberpunk .cyber-contact{padding:14px 0 76px}
+body.cyberpunk .cyber-contact>.wrap{display:flex;align-items:center;justify-content:space-between;gap:36px;background:linear-gradient(110deg,#17241b,#101719);border:1px solid #3b5130;padding:40px 44px;position:relative}
+body.cyberpunk .cyber-contact>.wrap::before{content:"";position:absolute;left:-1px;top:28px;bottom:28px;width:3px;background:var(--lime)}
+body.cyberpunk .cyber-contact .section-head{margin:0}
+body.cyberpunk .cyber-contact h2{font-size:38px}
+body.cyberpunk .cyber-contact h2::before{content:"02 / GET IN TOUCH";display:block;font:10px/1.5 var(--mono);letter-spacing:.12em;color:var(--lime);margin-bottom:13px}
+body.cyberpunk .cyber-contact .btn{background:var(--lime);color:#0c1206;border-color:var(--lime);padding:15px 25px;white-space:nowrap}
+body.cyberpunk .page-head{padding:68px 0 48px;position:relative}
+body.cyberpunk .page-head>.wrap{padding-bottom:35px;border-bottom:1px solid var(--line)}
+body.cyberpunk .page-head h1{font-size:clamp(42px,6.5vw,82px);line-height:1.13;letter-spacing:-.055em;margin:18px 0 22px}
+body.cyberpunk .page-head p{color:var(--muted);font-size:15px}
+body.cyberpunk .page-head .eyebrow::before{content:"//";color:var(--lime);margin-right:3px}
+body.cyberpunk .page-head+section{padding-top:4px;min-height:200px}
+body.cyberpunk .product-list{gap:18px}
+body.cyberpunk .product{padding:30px 32px;border:1px solid #304148;border-left:3px solid #6b8740;border-radius:0;background:linear-gradient(110deg,#101a1d,#0d151b);gap:28px;transition:border-color .2s,background .2s;min-width:0}
+body.cyberpunk .product:hover{border-color:#839c51;background:linear-gradient(110deg,#14211e,#101b21)}
+body.cyberpunk .product h2{font-size:22px;line-height:1.5;letter-spacing:-.02em}
+body.cyberpunk .product p{font-size:14px;line-height:1.95;color:var(--muted)}
+body.cyberpunk .product-icon-slot{width:78px;height:78px;flex:0 0 78px;border-radius:14px;background:#152025;box-shadow:0 0 0 1px #35464a}
+body.cyberpunk .product-card-body{gap:22px;align-items:center}
+body.cyberpunk .product-card-copy{min-width:0}
+body.cyberpunk .product-card-copy>h2,body.cyberpunk .product-card-copy>h3{margin:0 0 10px}
+body.cyberpunk .product-actions{min-width:142px;flex-direction:column;align-items:stretch;gap:8px}
+body.cyberpunk .product-actions .btn{min-height:39px;padding:7px 16px;font-size:12px;border-color:#384c50}
+body.cyberpunk .product-actions .btn:first-child{color:var(--lime);border-color:#5a713b;background:#c9ff3707}
+body.cyberpunk .badge{background:#d5ff4510;color:var(--lime);font:11px var(--mono);border-radius:0;border:1px solid #57732b;padding:6px 10px}
+body.cyberpunk .card{border-radius:0;border-color:var(--line);background:var(--surface)}
+body.cyberpunk .article{max-width:880px;line-height:1.95;padding-bottom:80px}
+body.cyberpunk .article h2{font-size:23px;line-height:1.65;margin-top:42px;border-left:2px solid var(--lime);padding-left:17px;letter-spacing:0}
+body.cyberpunk .article h3{font-size:18px;line-height:1.75;color:var(--cyan)}
+body.cyberpunk .article p,body.cyberpunk .article li{font-size:15px;color:#b8c4cc;overflow-wrap:anywhere}
+body.cyberpunk .article a{color:var(--cyan);text-underline-offset:4px}
+body.cyberpunk .update-block{border-color:var(--line);padding:28px 0}
+body.cyberpunk .kicker{font:12px var(--mono);color:var(--lime)}
+body.cyberpunk footer{background:#070b0e;border-top:1px solid var(--line);padding:37px 0 26px;font-size:12px}
+body.cyberpunk .cyber-footer-lead{display:flex;justify-content:space-between;align-items:center;gap:24px;padding-bottom:27px;margin-bottom:25px;border-bottom:1px solid #233039}
+body.cyberpunk .cyber-footer-lead>a{text-decoration:none;font:800 21px "Segoe UI",sans-serif;letter-spacing:-.03em;color:var(--text)}
+body.cyberpunk .cyber-footer-lead>a span{color:var(--lime);margin-right:8px}
+body.cyberpunk .cyber-footer-lead>span{font:10px var(--mono);letter-spacing:.1em;color:#859a9c}
+body.cyberpunk .footer-row{color:#8b9ba4;gap:18px;font-size:11px}
+body.cyberpunk .footer-row a:hover{color:var(--lime)}
+@media(min-width:1500px){body.cyberpunk .cyber-hero{padding-top:90px}}
+@media(max-width:1100px){
+ body.cyberpunk .wrap{width:calc(100% - 64px)}
+ body.cyberpunk .navlinks{gap:20px}
+ body.cyberpunk .nav{gap:20px;height:82px}
+ body.cyberpunk .navlinks a{font-size:11px}
+ body.cyberpunk .navlinks a[aria-current=page]::after{bottom:-15px}
+ body.cyberpunk .cyber-hero h1{font-size:clamp(70px,8.4vw,100px)}
+ body.cyberpunk .cyber-hero-copy p{font-size:14px}
+ body.cyberpunk .cyber-hero-grid{gap:26px}
+ body.cyberpunk .cyber-hero .eyebrow{font-size:9px}
+ body.cyberpunk .visual-heading{font-size:8px;margin:14px 12px 0}
+ body.cyberpunk .product{grid-template-columns:1fr;gap:20px}
+ body.cyberpunk .product-actions{flex-direction:row;justify-content:flex-start}
+ body.cyberpunk .cyber-contact>.wrap{padding:34px 30px}
+}
+@media(max-width:760px){
+ body.cyberpunk .wrap{width:calc(100% - 40px)}
+ body.cyberpunk .nav{height:72px;gap:18px}
+ body.cyberpunk .brand{font-size:15px;gap:10px}
+ body.cyberpunk .brand-symbol{width:32px;height:32px;font-size:25px}
+ body.cyberpunk .brand-name>span{font-size:9px}
+ body.cyberpunk .menu{display:block}
+ body.cyberpunk .navlinks{display:none;position:absolute;left:0;right:0;top:72px;background:#0b1218fa;border-bottom:1px solid #435638;padding:18px 24px 24px;gap:0;align-items:stretch;flex-direction:column}
+ body.cyberpunk .navlinks.open{display:flex}
+ body.cyberpunk .navlinks a{padding:13px 8px;font-size:14px}
+ body.cyberpunk .navlinks a[aria-current=page]::after{left:-4px;top:16px;bottom:16px;right:auto;width:2px;height:auto}
+ body.cyberpunk .navlinks a:last-child{margin-top:9px;padding:12px}
+ body.cyberpunk .cyber-hero{padding-top:45px}
+ body.cyberpunk .cyber-hero-grid{grid-template-columns:1fr;gap:37px}
+ body.cyberpunk .cyber-hero .eyebrow{font-size:9px;letter-spacing:.08em}
+ body.cyberpunk .cyber-hero h1{font-size:clamp(68px,16.9vw,116px);letter-spacing:-.07em;margin:25px 0}
+ body.cyberpunk .cyber-hero p{font-size:14px;line-height:1.95}
+ body.cyberpunk .actions{max-width:none;margin-top:27px}
+ body.cyberpunk .btn{font-size:12px;gap:10px;padding:12px 16px}
+ body.cyberpunk .cyber-visual{min-height:0;width:100%;max-width:520px;margin:0 auto}
+ body.cyberpunk .cyber-visual>img{max-height:345px}
+ body.cyberpunk .visual-heading{font-size:8px;margin:16px 14px 0}
+ body.cyberpunk .visual-caption{font-size:9px;gap:22px;padding-bottom:16px}
+ body.cyberpunk .hero-bottom{margin-top:29px;padding:22px 0;font-size:8px;gap:12px}
+ body.cyberpunk .hero-bottom a{font-size:8px;letter-spacing:0}
+ body.cyberpunk .hero-bottom a span{margin-left:5px}
+ body.cyberpunk .news-section{padding:48px 0}
+ body.cyberpunk .section-head{gap:20px;align-items:flex-start;flex-wrap:wrap;margin-bottom:24px}
+ body.cyberpunk h2{font-size:34px}
+ body.cyberpunk .sub{font-size:12px}
+ body.cyberpunk .news-section .section-head .btn{align-self:flex-end;font-size:11px;margin-top:8px}
+ body.cyberpunk .news-item{grid-template-columns:1fr;gap:6px;padding:20px 0;font-size:13px}
+ body.cyberpunk .news time{font-size:11px}
+ body.cyberpunk .cyber-contact{padding:0 0 48px}
+ body.cyberpunk .cyber-contact>.wrap{display:block;padding:29px 24px}
+ body.cyberpunk .cyber-contact h2{font-size:33px}
+ body.cyberpunk .cyber-contact .btn{width:100%;margin-top:27px;white-space:normal}
+ body.cyberpunk .page-head{padding:44px 0 30px}
+ body.cyberpunk .page-head>.wrap{padding-bottom:24px}
+ body.cyberpunk .page-head h1{font-size:clamp(34px,9vw,56px);margin:16px 0}
+ body.cyberpunk .page-head p{font-size:13px}
+ body.cyberpunk .page-head+section{padding-bottom:45px;min-height:120px}
+ body.cyberpunk .product{padding:23px 20px;gap:21px}
+ body.cyberpunk .product-card-body{gap:16px;align-items:flex-start}
+ body.cyberpunk .product-icon-slot{width:56px;height:56px;flex-basis:56px;border-radius:11px}
+ body.cyberpunk .product h2{font-size:17px;line-height:1.65}
+ body.cyberpunk .product p{font-size:12px;line-height:1.95}
+ body.cyberpunk .product-actions{gap:8px;flex-wrap:wrap}
+ body.cyberpunk .product-actions .btn{flex:1;white-space:nowrap}
+ body.cyberpunk .article{padding-bottom:46px}
+ body.cyberpunk .article h2{font-size:19px;padding-left:13px;margin-top:30px}
+ body.cyberpunk .article h3{font-size:16px}
+ body.cyberpunk .article p,body.cyberpunk .article li{font-size:14px}
+ body.cyberpunk .cyber-footer-lead{align-items:flex-start;flex-direction:column;gap:16px}
+ body.cyberpunk .cyber-footer-lead>span{font-size:8px}
+ body.cyberpunk .footer-row{font-size:10px;gap:14px}
+}
+@media(prefers-reduced-motion:reduce){
+ body.cyberpunk *,body.cyberpunk *::before,body.cyberpunk *::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}
+}
